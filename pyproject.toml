@@ -1,0 +1,17 @@
+[project]
+name = "microsoft-fabric-agentic-development-tooling"
+version = "0.1.0"
+description = "Local validation tooling for the Agent Skills in this repository"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "skills-ref",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+skills-ref = { git = "https://github.com/agentskills/agentskills.git", subdirectory = "skills-ref" }
