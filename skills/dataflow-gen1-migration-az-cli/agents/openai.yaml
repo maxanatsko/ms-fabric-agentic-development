@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dataflow Gen1 Migration"
+  short_description: "Migrate Gen1 dataflows safely with Azure CLI"
+  default_prompt: "Use $dataflow-gen1-migration-az-cli to plan and execute a guarded Dataflow Gen1 to Gen2 migration with Azure CLI."
