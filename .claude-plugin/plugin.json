@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "microsoft-fabric-agentic-development",
+  "displayName": "Microsoft Fabric Agentic Development",
+  "version": "1.0.0",
+  "description": "Agent skills for safe Microsoft Fabric development and migration workflows.",
+  "author": {
+    "name": "Maxim Anatsko",
+    "url": "https://github.com/maxanatsko"
+  },
+  "repository": "https://github.com/maxanatsko/microsoft-fabric-agentic-development",
+  "keywords": [
+    "microsoft-fabric",
+    "dataflow",
+    "azure-cli",
+    "agent-skills"
+  ]
+}

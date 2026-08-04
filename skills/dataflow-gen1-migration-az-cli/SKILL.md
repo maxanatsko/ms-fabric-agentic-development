@@ -7,15 +7,18 @@ description: "Migrate, copy, or bulk-move Power BI Dataflow Gen1 artifacts betwe
 
 Use the Power BI `saveAsNativeArtifact` preview API to create Dataflow Gen2 CI/CD copies of Gen1 dataflows in a target workspace. Treat this operation as a conversion, not a direct Gen1-to-Gen1 clone.
 
-## Prerequisite: Azure CLI
+## Prerequisites: PowerShell 7 and Azure CLI
 
-Check for Azure CLI before any discovery or migration command:
+Run the workflow in PowerShell 7. Check both executables from the user's terminal before any discovery or migration command:
 
-```powershell
+```text
+pwsh --version
 az --version
 ```
 
-If `az` is unavailable, ask the user to install it from [Install the Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli). On Windows, install with `winget install --exact --id Microsoft.AzureCLI`; on macOS, use `brew install azure-cli`; on supported Linux distributions, use the commands on the Microsoft installation page. Restart the terminal after installation, then authenticate and verify the signed-in account:
+If `pwsh` is unavailable or its major version is below 7, ask the user to install PowerShell 7 from Microsoft's instructions for [Windows](https://learn.microsoft.com/powershell/scripting/install/install-powershell-on-windows), [macOS](https://learn.microsoft.com/powershell/scripting/install/install-powershell-on-macos), or [Linux](https://learn.microsoft.com/powershell/scripting/install/linux-overview). On supported Windows clients, use `winget install --id Microsoft.PowerShell --source winget`. Start a new terminal and enter `pwsh` before continuing.
+
+If `az` is unavailable, ask the user to install it from [Install the Azure CLI](https://learn.microsoft.com/cli/azure/install-azure-cli). On Windows, install with `winget install --exact --id Microsoft.AzureCLI`; on macOS, use `brew install azure-cli`; on supported Linux distributions, use the commands on the Microsoft installation page. Restart the terminal after installation, enter `pwsh`, then authenticate and verify the signed-in account:
 
 ```powershell
 az login
